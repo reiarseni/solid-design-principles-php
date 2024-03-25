@@ -51,3 +51,46 @@ development speed.
 
 <hr />
 
+
+### 2) Open Closed Principle
+This principle is about **class design and feature extensions**.
+> A class must be open to extension, but closed to modification.
+> Software entities ... should be open for extension, but closed for modification.
+
+**Some definitions:**
+
++ Software entities(Classes, modules, functions) should be open for extension, not
+modification.
++ "You should be able to extend a classes behavior, without modifying it."
++ "...software entities such as modules, classes, functions, etc. should be open for extension, but closed for modification."
++ "Objects or entities should be open for extension, but closed for modification."
++ A class must be open to extension, but closed to modification.
+
+**Overview**
+
+Open–closed principle states classes, modules, functions etc should be open for extension, but closed for modification
+**i.e.** the behavior can be extended without modifying its source code.
+
+The main benefit of this approach is that an interface introduces an additional level of abstraction which enables loose coupling. The implementations of an interface are independent of each other and don’t need to share any code. If you consider it beneficial that two implementations of an interface share some code, you can either use inheritance or composition.
+
+#### Examples:
+1. First Example
+   - [ocp bad](2-Open-Closed-Principle/1-Example/ocp-bad.php)
+   - [ocp good](2-Open-Closed-Principle/1-Example/ocp-good.php)
+
+2. Second Example
+   - [index](2-Open-Closed-Principle/2-Example/index.php)
+
+3. Third Example
+   - [Student](2-Open-Closed-Principle/3-Example/Refactoring/Student.php)
+
+4. Fourth Example
+   - [AllEmployees](2-Open-Closed-Principle/4-Example/Refactoring/AllEmployees.php)
+
+5. Fifth Example
+   - [Student](2-Open-Closed-Principle/5-Example/Refactoring/Student.php)
+
+<hr />
+
+
+
