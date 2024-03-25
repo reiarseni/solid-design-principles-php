@@ -164,6 +164,47 @@ Similar to the Single Responsibility Principle, the goal of the Interface Segreg
 
 <hr />
 
+### 5) Dependency Inversion Principle
+This principle wires up all **other four principles in a single circle**.
+> Depend on abstractions. Do not depend on concretions.
 
+**Some definitions:**
+
++ Dependency Inversion Principle consists of two parts:
+  - High-level modules should not depend on low-level modules. Both should depend on abstractions.
+  - Abstractions should not depend on details. Details should depend on abstractions.
+
++ Dependency should be on abstractions not concretions 
+    1. A. High-level modules should not depend upon low-level modules. Both should depend upon abstractions.  
+    2. B. Abstractions should not depend on details. Details should depend upon abstractions.
+
++ One should depend upon abstractions, not concretions.
++ Depend on abstractions, not implementations.
++ Entities must depend on abstractions not on concretions. It states that the high level module must not depend on the low level module, but they should depend on abstractions.
++ Ability to override injected dependencies.
++ Our dependencies must be on interfaces/contracts or on abstract classes rather than on "concrete" classes.
++ The DIP is violated when one class depends of another class by concretion (2nd class is concrete class) and not by abstraction (2nd class is NOT abstract class, interface).
++ Dependency injection provides a component with its dependencies either via a constructor, method calls or property configuration.
++ Dependencies are separated by controlling them and instantiating them elsewhere in the system.
++ Dependency injection allows us to inject only the dependencies we need, when we need and those without having to hard-write any dependencies.
+
+**Overview**
+
+Dependency inversion principle is a specific form of loosely coupling software modules.
+
+The general idea of this principle is as simple as it is important: High-level modules, which provide complex logic, should be easily reusable and unaffected by changes in low-level modules, which provide utility features. To achieve that, you need to introduce an abstraction that decouples the high-level and low-level modules from each other.
+
+There comes a point in software development where our app will be largely composed of modules.  When this happens, we have to clear things up by using dependency injection.  High-level components depending on low-level components to function.
+
+#### Examples:
+1. First Example
+   - [dip bad](5-Dependency-Inversion-Principle/1-Example/dip-bad.php)
+   - [dip good](5-Dependency-Inversion-Principle/1-Example/dip-good.php)
+
+2. Second Example
+   - [index](5-Dependency-Inversion-Principle/2-Example/index.php)
+   
+3. Third Example
+  - [StudentRepository](5-Dependency-Inversion-Principle/3-Example/Refactoring/StudentRepository.php)
 
 
