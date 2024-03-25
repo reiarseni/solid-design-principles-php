@@ -92,5 +92,41 @@ The main benefit of this approach is that an interface introduces an additional 
 
 <hr />
 
+### 3) Liskov Substitution Principle
+This principle is about **subtyping and inheritance**
+> Derived classes must be substitutable for their base classes.
+> Functions that use pointers or references to base classes must be able to use objects of derived classes without knowing it.
+
+**Some definitions:**
++ A sub-class must be substitutable for its super-class.  The aim of this principle is to ascertain that a sub-class can assume the place of its super-class without errors.  If the code finds itself checking the type of class then, it must have violated this principle.
++ Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.
++ Derived classes must be substitutable for their base classes.
++ Every subclass/derived class should be substitutable for their base/parent class.
++ Software should not alter the desirable results when we replace a parent type with any of the subtypes.
++ Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.
++ Objects should be replaceable by their subtypes without altering how the program works
++ An instance of type T must be able to be replaced by an instance of type G, such as G subtype of T, without this modifying the consistency of the program.
++ Child classes should never break parent class type definitions.
+
+**Overview**
+
+The principle defines that objects of a superclass shall be replaceable with objects of its subclasses without breaking the application
+
+An instance of type T must be able to be replaced by an instance of type G, such as G subtype of T, without this modifying the consistency of the program.
+
+#### Examples:
+1. First Example
+   - [lsp bad](3-Liskov-Substitution-Principle/1-Example/lsp-bad.php)
+   - [lsp good](3-Liskov-Substitution-Principle/1-Example/lsp-bad.php)
+
+2. Second Example
+   - [index](3-Liskov-Substitution-Principle/2-Example/index.php)
+
+3. Third Example
+   - [Student](3-Liskov-Substitution-Principle/3-Example/Refactoring/Student.php)
+
+<hr />
+
+
 
 
