@@ -127,6 +127,43 @@ An instance of type T must be able to be replaced by an instance of type G, such
 
 <hr />
 
+### 4) Interface Segregation Principle
+This principle is about **business logic to clients communication**.
+> Many client-specific interfaces are better than one general-purpose interface.
+
+**Some definitions:**
+
++ Make fine grained interfaces that are client specific.
++ Clients should not be forced to depend upon interfaces that they do not use.
++ A client should never be forced to implement an interface that it doesn’t use or clients shouldn’t be forced to depend on methods they do not use.
++ Prefer several specific interfaces for each client rather than a single general interface.
+
+**Overview**
+
+Make fine grained interfaces that are client specific Clients should not be forced to depend upon interfaces that they do not use. This principle deals with the disadvantages of implementing big interfaces.
+
+The interface-segregation principle (ISP) states that no class, function, method etc should be forced to depend on methods it does not use.
+
+Large interfaces should be break down into chunks of small interfaces.
+
+Similar to the Single Responsibility Principle, the goal of the Interface Segregation Principle is to reduce the side effects and frequency of required changes by splitting the software into multiple, independent parts.
+
+#### Examples:
+1. First Example
+   - [isp bad](4-Interface-Segregation-Principle/1-Example/isp-bad.php)
+   - [isp good](4-Interface-Segregation-Principle/1-Example/isp-bad.php)
+
+2. Second Example
+   - [index](4-Interface-Segregation-Principle/2-Example/index.php)
+
+3. Third Example
+   - [Student](4-Interface-Segregation-Principle/3-Example/Refactoring/Student.php)
+
+4. Fourth Example
+   - [Developer](4-Interface-Segregation-Principle/4-Example/Refactoring/Developer.php)
+
+<hr />
+
 
 
 
